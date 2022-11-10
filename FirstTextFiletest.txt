@@ -1,0 +1,7 @@
+INSERT INTO ftb_nvolkov.aircraft (aircraft_id, manufacturer, model, number_of_seats) VALUES (42, 'ABS Aerolight', 'Legacy', 1);
+ 
+INSERT INTO ftb_nvolkov.flight (flight_id, arrival_date, arrival_time, departure_date, departure_time, flight_charge, flight_number, aircraft_aircraft_id, departure_airport_airport_id, destination_airport_airport_id) VALUES (60, '2022-08-20', '02:55', '2022-08-19', '20:00', 1500, 'DCG-CHI01', 42, 2, 19);
+ 
+INSERT INTO ftb_nvolkov.passenger (passenger_id, address, email, first_name, last_name, passport_number, phone_number, flight_flight_id) VALUES (45, '27 Somestreet Ave, Chicago', 'test1@hotmail.com', 'Mike', 'Wazowski', '102030', '+120230344', 60);
+INSERT INTO ftb_nvolkov.passenger (passenger_id, address, email, first_name, last_name, passport_number, phone_number, flight_flight_id) VALUES (46, '69 Otherstreet Ave, Phoenix', 'test55@hotmail.com', 'Jack', 'Wazowski', '345678', '+120238445', 60);
+INSERT INTO ftb_nvolkov.passenger (passenger_id, address, email, first_name, last_name, passport_number, phone_number, flight_flight_id) VALUES (47, '63 Black St, Atlanta', 'test88@hotmail.com', 'Von', 'Wazowski', '4567789', '+120256754', 60);

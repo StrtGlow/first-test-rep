@@ -1,0 +1,13 @@
+9.   	Restart your java-auth service.
+[nvolkov@c7-backend /]$ sudo systemctl restart java-auth.nvolkov
+_____________________________________________________________________________________________________________________________________
+ 
+10.   Perform the following with log events (accessed via journalctl) of your own services:
+a.   	Display all log events from all your services (the output may not be included into the home task report)
+[nvolkov@c7-backend /]$ journalctl  -u *nvolkov.service
+_____________________________________________________________________________________________________________________________________
+b.   	Filter all lines containing “warn”, “err”, “sql” substrings (case-insensitive)
+[nvolkov@c7-backend /]$ journalctl -p err -p warning -u *nvolkov.service
+-- Logs begin at Sun 2022-05-29 08:34:28 MSK, end at Thu 2022-07-21 16:27:50 MSK. --
+Jul 21 15:19:10 c7-backend systemd[1]: java-auth.nvolkov.service failed.
+
